@@ -1,0 +1,81 @@
+linux basic commands
+------------------------------
+1. hostname [to chekc the hostname of the system]
+2. who am i [to check user]
+3. hostnamectl [show sys name]
+4. hostnamectl set-hostname name [to change the hostname of sys]
+5.  pwd [present working directory]
+6. cd [change directory]
+[ a.. cd aur folder name
+ b. cd /root [full address/ absolute path]
+7. cat > file1 [to create file and edit it]
+save it by ctr+d
+8. cat file1 [to read the file]
+9. touch f1 f2 f3  [ to create multiple files]
+10. echo "pin is 123" > account [to add data into the file]
+11. vi filename [to create a file or read the file in edit mode]
+[to save press esc and :wq, without save :q]
+12. rm filename [to remove file]
+13. rm -rf foldername [to remove folder]
+14. mv sourcefilename destinationfilename [to change the name of the file]
+15. cat >> file1 [to add content in the created file ]
+16. cat file1 file2 > mainfile [to merge two files]
+
+day 2
+---------
+1. creating a single file
+2. creating multiple files
+3. create softlink of the file
+4. create hardling of the file
+5. creating copy of the file
+6. renaming the file
+7. making the file delete protected
+8. hiding the file
+9. unhiding the file
+10. deleting the file
+11. merging two or more than two files
+12. hiding the file
+13. unhiding the file
+14. appending message in the old file
+15. restoring the file after deletion
+16. changing current owner of the file
+17. changing the permission over the file
+18. apply acl over the file 
+19. finding the file with the name of the file
+20. viewing permission over the file
+21. creating blank file /files
+22. switch with different users on the system
+23. view currently logged in user
+24. creating user account
+25. changing password of the user
+26. removing password from users
+27. creating multiple users by using loop 
+
+commands
+----------------
+1. pwd
+2. cd /
+3. mkdir mydata
+4. cd mydata
+5. ls
+6. cat > filename
+7. touch f1 f2 f3
+8. ln -s /root/Desktop/mydata/f1 /root/Desktop/file1   [creating softlink of the file]
+9. cat >> f1
+ this is next line of code
+ctr+d
+10. ln -l /root/mydata /root/Desktop/file2   [ create hardlink of the file]
+11.  rm f1
+12. ln /root/mydata /root/Desktop/file2
+13. cp fi f2
+14. chattr +i filename
+15. mv f1 .f1
+16. mv .f1 f1
+17. rm f1
+18. tar -cvf file/directory name sourcefilename
+19. chown rizwan f1
+20. chgrp riz filename
+21. useradd username
+22. passwd username
+23. passwd -d username [to left the password blank]
+24.  chmod 777 filename
