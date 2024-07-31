@@ -1,0 +1,54 @@
+1. Intro
+2. Installation
+3. file management
+4. user management
+5. FHS : file system hierarchy standard is official way of redhat to organize files in linux in a hierarchy. Everything is file linux including all hardware devices.
+	so it is required to know location and content of the file by the administrator in order to chofigure and manage the file.
+	a. [/]		: it is ROOT of all files and directories.
+	b. [/boot] 	: bootloader file like grub reside inside this directory
+	c. [/root]	: home directory of super user
+	d. [/etc]	: all configuration file related to network system or services
+	e. [/bin]	: all user commands and script reside inside this directory
+	f. [/sbin]	: all administrative commands and script
+	g. [/dev]	: all devices connected to the system resides in this directory
+	h. [/home]	: home directory of all users reside in this directory.
+	i. [/lib]	: library of different language reside in this directory
+	j. [/media]	: reside all media files inside this directory
+	k. [/mnt]	: it is mount point of any devices or directory.
+	l. [/opt]	: all applications like open office reside in this directory
+	m. [/proc]	: all running process reside in this directory
+	n. [/run]	: hold running application
+	o. [/temp]	: hold temporary data
+	p. [/srv]	: service related contents 
+	q. [/sys]	: system related configuration files
+	r. [/usr]	: hold user data 
+	s. [/var]	: hold variable data like data related to printer , ftp, etc.
+	
+6. package and application management
+	windows application type : .exe, .msi, .bat
+	linux			 : .rpm, .sh
+	Tools or command for package management in linux.
+		1. .rpm [redhat package manager] 	: install, uninstall, update, check
+		2. yum  [yellow updater modified]	: install, uninstall, update, check, distribute to their clients.
+
+Commands: -
+===========
+1. rpm -qa telnet
+if not showing telnet then mount linex installation disk
+
+mount /dev/cdrom /mnt
+
+note- go to vm cd setting and chek on connected make sure rhel iso attached in cd rom
+
+after mount
+cd /mnt/Packages/
+rpm -ivh telnet		note- error no such file or directory
+rpm -ivh --nodeps --force telnet*
+tmp -qa telnet
+
+to uninstall
+-------------
+rpm -e telnet*
+rpm -qa telnet
+
+
